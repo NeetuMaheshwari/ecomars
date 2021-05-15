@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<script>
+  $(document).ready(function(){
+    $("#a3").click(function(){
+      $("#a2").html("<i>Everlane has taken the clothing world by storm with hyper-minimalist essentials for men and women. This Air Crew Tee pretty much sums up what Everlane is about: high-quality materials, modern looks and reasonable prices. The fit is slim and the cotton is finer than Everlane’s regular cotton crew shirt, giving the Air Crew a light, breezy feel that sets the standard for T-shirts we want to be slipping into today</i>")
+      $("#a1").attr("src","https://www.rollingstone.com/wp-content/uploads/2020/09/Everlane-Air-Crew-Tee.png?w=1006")
+      $("#header").html("<b> T-shirt <b/>")
+      $("#btn").attr("href","T-shirt.html")
+    })
+    $("#btn-modal").click(function(){
+      $("#a2").html("<i>Levi Strauss clothing company from America is world famous for its Levi’s brand of denim jeans. The American brand also produces jackets, eyeglasses, leather products and perfect jeans in style with slim, skinny and straight in styles for both men and women.</i>")
+      $("#a1").attr("src","https://forever21.imgix.net/img/app/product/4/402420-2234438.jpg?w=573&amp;auto=format")
+      $("#header").html("<b> Jeans <b/>")
+      $("#btn").attr("href","jeans.html")
+    })
+    $("#btn2").click(function(){
+      $("#a2").html("<i>As one of the world’s largest shoe shoe brands, Nike has always been at the leading edge of innovation, technology development, and cutting-edge marketing campaigns that help it surpass other brands in terms of popularity and sales. Nike’s ‘Just do It’ marketing campaign featuring Colin Kaepernick has proven to be beneficial for the company as it helped grow their online sales of footwear products across the world. Nike, the world’s largest sports footwear brand, is reinventing itself for the digital era. The company is taking several steps toward its goal of becoming a retail tech company and some of these tactics already appear to be working.  Nike is also getting its flagship products right with shoes like Nike Air Max 270, ZoomX, React, and VaporMax.</i>")
+      $("#a1").attr("src","https://assets.ajio.com/medias/sys_master/root/h0e/h57/14092954894366/-473Wx593H-460455972-black-MODEL.jpg")
+      $("#header").html("<b> Shoes <b/>")
+      $("#btn").attr("href","Shoes.html")
+  })
+})
+</script>
+
+  <div class="content"style="margin-top: 15%;">
+    <div class="row ">
+        <div class="col-md-8 offset-md-2">
+<!-- On tables -->
+<table class="table table-primary table-bordered">
+    <thead>
+            <th class="table-primary">#</th>
+            <th class="table-secondary">Title</th>
+            <th class="table-success">Detail</th>
+            <th class="table-danger">Action
+          </th>
+    </thead>
+    <tbody>
+<tr>
+  <td class="table-primary">1</td>
+  <td class="table-secondary">Jeans</td>
+  <td class="table-success">The Brand is Levi’s</td>
+  <td class="table-danger"><button id="btn-modal" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    View
+  </button></td>
+</tr>
+<tr>
+  <td class="table-primary">2</td>
+  <td class="table-secondary">t-shirt</td>
+  <td class="table-success">The Brand is Everlane</td>
+  <td class="table-danger"><button id="a3" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    View
+  </button></td>
+</tr>
+<tr>
+<td class="table-primary">3</td>
+<td class="table-secondary">shoes</td>
+<td class="table-success">The Brand is Nike </td>
+<td class="table-danger"><button id="btn2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  View
+</button></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="container">
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl ">
+      <div class="modal-content">
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 id="header" class="modal-title">Jeans</h1>
+          <button type="button" class="close" data-dismiss="modal">x</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <table>
+            <tbody>
+              <tr>
+                <td><img id="a1" src="https://www.makeyourownjeans.com/images/jeans/firstcustomjeans.jpg" width="400px" height="310px " alt=""></td>
+            <td>
+              <div id="a2" ><i>Levi Strauss clothing company from America is world famous for its Levi’s brand of denim jeans. The American brand also produces jackets, eyeglasses, leather products and perfect jeans in style with slim, skinny and straight in styles for both men and women .</i></div>
+            </td>
+            </tr>
+          </tbody>
+
+          </table>
+
+          <div class="modal-footer">
+            <a id="btn" class="btn btn-warning" href="jeans.html" >Buy now</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+
+
+
+
+</body>
+</html>
